@@ -1,0 +1,5 @@
+.idea
+.sass-cache
+.tmp
+node_modules
+.db

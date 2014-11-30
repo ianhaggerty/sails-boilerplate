@@ -1,0 +1,11 @@
+extends ./layout.jade
+
+block content
+  h2 A server side template
+  ul
+    li 'views/home.jade'
+
+  script.
+    $(document).ready(function() {
+        App.start()
+    })

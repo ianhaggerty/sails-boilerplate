@@ -1,0 +1,3 @@
+module.exports = ->
+	sails.log.info "Running example CRON job"
+	# todo remove this...
