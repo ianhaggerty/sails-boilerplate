@@ -36,7 +36,9 @@
 
 ## TO START
 
+
 * `npm install .`
 * `grunt boot`
+* `mkdir .db`
 * `npm run db`
 * `npm run start`
