@@ -1,9 +1,12 @@
 .idea
 .sass-cache
+*.log
+node_modules
+
+config/local.coffee
 
 .tmp/*
 !.tmp/icons/font/.keep
 
-node_modules
 .db/*
 !.db/.keep
