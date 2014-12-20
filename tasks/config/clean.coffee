@@ -1,10 +1,19 @@
-###
-Clean files and folders
-###
-module.exports = (grunt) ->
-	grunt.config.set "clean",
-		dev: [".tmp/public/**"]
-		build: ["www"]
+#===============================================================================
+# grunt-contrib-clean
+#
+# Removes files and folders.
+#===============================================================================
 
-	grunt.loadNpmTasks "grunt-contrib-clean"
-	return
+module.exports = (grunt) ->
+  grunt.config.set "clean",
+    dev: [".tmp/public/**"]
+    build: ["www"]
+    db: [".db/**/*", "!.db/.keep"]
+    prod: [
+      ".tmp/public/concat"
+      ".tmp/public/js"
+      ".tmp/public/tests"
+      ".tmp/public/styles"
+    ]
+
+  grunt.loadNpmTasks "grunt-contrib-clean"

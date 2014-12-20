@@ -1,6 +1,9 @@
-###
-Autoinsert script tags (or other filebased tags) in an html file.
-###
+#===============================================================================
+# grunt-sails-linker
+#
+# Autoinsert script tags (or other filebased tags) in an html file.
+#===============================================================================
+
 module.exports = (grunt) ->
   grunt.config.set "sails-linker",
     devJs:
@@ -119,8 +122,8 @@ module.exports = (grunt) ->
 
     devJsJade:
       options:
-        startTag: "// SCRIPTS"
-        endTag: "// SCRIPTS END"
+        startTag: "//- SCRIPTS"
+        endTag: "//- SCRIPTS END"
         fileTmpl: "script(src=\"%s\")"
         appRoot: ".tmp/public"
 
@@ -129,8 +132,8 @@ module.exports = (grunt) ->
 
     devJsRelativeJade:
       options:
-        startTag: "// SCRIPTS"
-        endTag: "// SCRIPTS END"
+        startTag: "//- SCRIPTS"
+        endTag: "//- SCRIPTS END"
         fileTmpl: "script(src=\"%s\")"
         appRoot: ".tmp/public"
         relative: true
@@ -140,8 +143,8 @@ module.exports = (grunt) ->
 
     prodJsJade:
       options:
-        startTag: "// SCRIPTS"
-        endTag: "// SCRIPTS END"
+        startTag: "//- SCRIPTS"
+        endTag: "//- SCRIPTS END"
         fileTmpl: "script(src=\"%s\")"
         appRoot: ".tmp/public"
 
@@ -150,8 +153,8 @@ module.exports = (grunt) ->
 
     prodJsRelativeJade:
       options:
-        startTag: "// SCRIPTS"
-        endTag: "// SCRIPTS END"
+        startTag: "//- SCRIPTS"
+        endTag: "//- SCRIPTS END"
         fileTmpl: "script(src=\"%s\")"
         appRoot: ".tmp/public"
         relative: true
@@ -161,8 +164,8 @@ module.exports = (grunt) ->
 
     devStylesJade:
       options:
-        startTag: "// STYLES"
-        endTag: "// STYLES END"
+        startTag: "//- STYLES"
+        endTag: "//- STYLES END"
         fileTmpl: "link(rel=\"stylesheet\", href=\"%s\")"
         appRoot: ".tmp/public"
 
@@ -171,8 +174,8 @@ module.exports = (grunt) ->
 
     devStylesRelativeJade:
       options:
-        startTag: "// STYLES"
-        endTag: "// STYLES END"
+        startTag: "//- STYLES"
+        endTag: "//- STYLES END"
         fileTmpl: "link(rel=\"stylesheet\", href=\"%s\")"
         appRoot: ".tmp/public"
         relative: true
@@ -182,8 +185,8 @@ module.exports = (grunt) ->
 
     prodStylesJade:
       options:
-        startTag: "// STYLES"
-        endTag: "// STYLES END"
+        startTag: "//- STYLES"
+        endTag: "//- STYLES END"
         fileTmpl: "link(rel=\"stylesheet\", href=\"%s\")"
         appRoot: ".tmp/public"
 
@@ -192,8 +195,8 @@ module.exports = (grunt) ->
 
     prodStylesRelativeJade:
       options:
-        startTag: "// STYLES"
-        endTag: "// STYLES END"
+        startTag: "//- STYLES"
+        endTag: "//- STYLES END"
         fileTmpl: "link(rel=\"stylesheet\", href=\"%s\")"
         appRoot: ".tmp/public"
         relative: true
@@ -205,8 +208,8 @@ module.exports = (grunt) ->
   # Bring in JST template object
     devTplJade:
       options:
-        startTag: "// TEMPLATES"
-        endTag: "// TEMPLATES END"
+        startTag: "//- TEMPLATES"
+        endTag: "//- TEMPLATES END"
         fileTmpl: "script(type=\"text/javascript\", src=\"%s\")"
         appRoot: ".tmp/public"
 
@@ -216,8 +219,8 @@ module.exports = (grunt) ->
   # Jasmine Tests
     testJsJade:
       options:
-        startTag: "// TESTS"
-        endTag: "// TESTS END"
+        startTag: "//- TESTS"
+        endTag: "//- TESTS END"
         fileTmpl: "script(type=\"text/javascript\", src=\"%s\")"
         appRoot: ".tmp/public"
 
@@ -226,8 +229,8 @@ module.exports = (grunt) ->
 
     testStylesJade:
       options:
-        startTag: "// TEST STYLES"
-        endTag: "// TEST STYLES END"
+        startTag: "//- TEST STYLES"
+        endTag: "//- TEST STYLES END"
         fileTmpl: "link(rel=\"stylesheet\", href=\"%s\")"
         appRoot: ".tmp/public"
 

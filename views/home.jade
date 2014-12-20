@@ -9,5 +9,23 @@ block content
 
   script.
     $(document).ready(function() {
-        App.start()
-    })
+        App.start();
+    });
+
+  .icons
+    h2 Icon Examples
+    +icon-svg('unity', 100, 100) // height & width
+    +icon-svg('unity-embrace', 200, 150)
+    +icon-svg('academy')
+
+  .sprites
+    h2 Sprite Examples
+
+    +sprite('asprite')
+    +sprite('wiggly')
+
+  .font-icons
+    h2 Font Icons
+    +icon-font('unity')
+    +icon-font('unity-embrace')
+    +icon-font('academy')

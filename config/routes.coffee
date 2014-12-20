@@ -5,16 +5,16 @@
 #===============================================================================
 
 routes =
-	'/tests':
-		view: 'tests'
-	'/':
-		view: "home"
+  '/tests':
+    view: 'tests'
+  '/':
+    view: "home"
 
 clientSide = [
-	# todo put client side routes here
+  # todo put client side routes here
 ]
 
 for route in clientSide
-	routes[route] = view: "home"
+  routes[route] = view: "home"
 
 module.exports.routes = routes

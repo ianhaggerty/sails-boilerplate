@@ -1,5 +1,9 @@
 .idea
 .sass-cache
-.tmp
+
+.tmp/*
+!.tmp/icons/font/.keep
+
 node_modules
-.db
+.db/*
+!.db/.keep

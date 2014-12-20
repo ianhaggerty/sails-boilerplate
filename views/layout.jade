@@ -1,18 +1,23 @@
+include mixins
+
 doctype html
 html
   head
     title Sails Application
 
-    // STYLES
+    //- STYLES
     link(rel="stylesheet", href="/styles/importer.css")
-    // STYLES END
+    //- STYLES END
 
   body
-    // TEMPLATES
-    script(type="text/javascript", src="/jst.js")
-    // TEMPLATES END
+    //- ICONS
+    include ../.tmp/icons/svg/icons.svg
 
-    // SCRIPTS
+    //- TEMPLATES
+    script(type="text/javascript", src="/jst.js")
+    //- TEMPLATES END
+
+    //- SCRIPTS
     script(src="/js/dependencies/sails.io.js")
     script(src="/js/dependencies/jquery.js")
     script(src="/js/dependencies/lodash.js")
@@ -22,9 +27,11 @@ html
     script(src="/js/dependencies/backbone.marionette.js")
     script(src="/js/dependencies/backbone.sails.js")
     script(src="/js/dependencies/backbone.wreqr.js")
+    script(src="/js/dependencies/jade.js")
     script(src="/js/dependencies/json2.js")
     script(src="/js/config/marionette.js")
     script(src="/js/app.js")
-    // SCRIPTS END
+    //- SCRIPTS END
 
+    //- PAGE CONTENT
     block content

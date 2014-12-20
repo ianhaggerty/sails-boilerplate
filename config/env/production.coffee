@@ -13,3 +13,14 @@ module.exports =
 
 	log:
 	   level: "silent"
+
+  session:
+    adapter: 'mongo'
+    port: 27017
+    db: 'sails'
+    collection: 'sessions'
+
+    username: ''
+    password: ''
+    auto_reconnect: true
+    ssl: false

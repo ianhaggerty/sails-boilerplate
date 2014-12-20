@@ -1,0 +1,13 @@
+//-=============================================================================
+//- Jade Mixins
+//-=============================================================================
+
+mixin icon-svg(name, height, width)
+  svg(height=height width=width class="icon-svg icon-svg__#{name}")
+    use(xlink:href="#icon-svg__#{name}")
+
+mixin icon-font(name)
+  i(class="icon-font icon-font__#{name}")
+
+mixin sprite(name)
+  i(class="sprite sprite__#{name}")

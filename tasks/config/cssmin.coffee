@@ -1,6 +1,9 @@
-###
-Compress CSS files
-###
+#===============================================================================
+# grunt-contrib-cssmin
+#
+# Compress CSS files.
+#===============================================================================
+
 module.exports = (grunt) ->
 	grunt.config.set "cssmin",
 		dist:

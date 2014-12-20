@@ -1,6 +1,9 @@
-###
-Compiles LESS files into CSS.
-###
+#===============================================================================
+# grunt-contrib-compass
+#
+# Compile compass SCSS files to CSS.
+#===============================================================================
+
 module.exports = (grunt) ->
 	grunt.config.set "compass",
 		dev:

@@ -1,6 +1,9 @@
-###
-Concatenate files
-###
+#===============================================================================
+# grunt-contrib-concat
+#
+# Concatenates files.
+#===============================================================================
+
 module.exports = (grunt) ->
 	grunt.config.set "concat",
 		js:
