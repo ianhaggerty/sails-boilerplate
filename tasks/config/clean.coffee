@@ -6,7 +6,12 @@
 
 module.exports = (grunt) ->
   grunt.config.set "clean",
-    dev: [".tmp/public/**"]
+    dev: [
+      ".tmp/public/**"
+      ".tmp/icons/font/icons.html"
+      ".tmp/icons/svg/**/*"
+      "assets/images/sprite*.png"
+    ]
     build: ["www"]
     db: [".db/**/*", "!.db/.keep"]
     prod: [

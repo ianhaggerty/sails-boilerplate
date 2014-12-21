@@ -1,19 +1,22 @@
 cssFilesToInject = [
+  "icons"
 	"**/*"
 ]
 
 jsFilesToInject = [
-	"dependencies/sails.io"
+	"dependencies/dist/sails.io"
 
-	"dependencies/jquery"
-	"dependencies/jquery.**"
-
-	"dependencies/lodash"
+	"dependencies/dist/jquery"
+	"dependencies/dist/lodash.compat"
+  "dependencies/json2"
+  "dependencies/jade"
 
 	"dependencies/backbone"
-	"dependencies/backbone.**"
+	"dependencies/lib/core/backbone.marionette"
+  "dependencies/lib/backbone.babysitter"
+  "dependencies/lib/backbone.wreqr"
 
-	"dependencies/**/*"
+	"dependencies/backbone.sails"
 
 	"config/**/*"
 

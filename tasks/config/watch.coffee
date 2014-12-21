@@ -50,4 +50,13 @@ module.exports = (grunt) ->
         "compass:dev"
       ]
 
+    bower:
+      files: [
+        "bower_components/**/*"
+      ]
+
+      tasks: [
+        "bower:dev"
+      ]
+
   grunt.loadNpmTasks "grunt-contrib-watch"

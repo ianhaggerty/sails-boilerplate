@@ -9,6 +9,7 @@
 module.exports = (grunt) ->
   grunt.registerTask "buildProd", [
     "compileAssets"
+    "htmlmin:svgIcons"
     "concat"
     "uglify"
     "cssmin"
@@ -19,10 +20,6 @@ module.exports = (grunt) ->
     "sails-linker:prodStylesJade"
     "sails-linker:devTplJade"
     "clean:prod"
-  ]
-
-  grunt.registerTask "bootProd", [
-
   ]
 
   grunt.registerTask "prod", [] # make sails happy

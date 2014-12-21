@@ -8,10 +8,9 @@ module.exports = (grunt) ->
   grunt.config.set "webfont",
     icons:
       src: 'assets/images/icons/**/*.svg'
-      dest: 'assets/fonts'
-      destCss: 'assets/styles/build'
+      dest: '.tmp/public/fonts'
+      destCss: '.tmp/public/styles'
       options:
-        stylesheet: 'scss'
         engine: 'fontforge'
         types: 'eot,woff,ttf,svg'
         order: 'eot,woff,ttf,svg'

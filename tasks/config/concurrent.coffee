@@ -16,6 +16,7 @@ module.exports = (grunt) ->
         "watch:assets"
         "watch:icons"
         "watch:sprites"
+        "watch:bower"
         "compass:watch"
       ]
       options: opts
@@ -33,6 +34,7 @@ module.exports = (grunt) ->
         "webfont:icons"
         "jade:dev"
         "coffee:dev"
+        "bower:dev"
       ]
       options: opts
 
