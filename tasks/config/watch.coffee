@@ -17,9 +17,10 @@ module.exports = (grunt) ->
     # Assets to watch:
       files: [
         "assets/**/*"
-        "tasks/pipeline.js"
-        "!assets/images/icons/**/*"
-        "!assets/images/sprites/**/*"
+        "tasks/pipeline.js" # injector needs to re-run
+        "!assets/images/icons/**/*" # handled by webfont
+        "!assets/images/sprites/**/*" # handled by compass
+        "!assets/**/*.scss" # handled by compass
       ].concat(
         require("../pipeline").templateFilesToInject
       )

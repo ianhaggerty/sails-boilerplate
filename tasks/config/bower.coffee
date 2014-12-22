@@ -16,10 +16,6 @@ module.exports = (grunt) ->
         packageSpecific:
           json2:
             files: ['json2.js']
-#          'sails.io.js':
-#            files: ['sails.io.js']
-#          'socket.io-client':
-#            files: ['socket.io.js']
 
 
   grunt.loadNpmTasks('grunt-bower')

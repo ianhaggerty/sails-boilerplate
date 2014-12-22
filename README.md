@@ -109,6 +109,7 @@
 ## TO START
 
 * `npm install .`
+* `bower install .`
 
 ### Development Environment
 
@@ -132,4 +133,6 @@
 
 * [ruby](http://www.ruby-lang.org/en/downloads/)
 * `gem update --system && gem install compass`
-* `npm install -g forever mongodb node-debug bower`
+* `npm install -g forever mongodb node-debug bower browser-sync`
+* [ttfautohont](http://www.freetype.org/ttfautohint/#download)
+* [fontforge](http://fontforge.github.io/en-US/) (make sure bin folder is available to your environment)

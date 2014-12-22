@@ -7,7 +7,10 @@
 module.exports = (grunt) ->
   grunt.config.set "browserSync",
     bsFiles:
-      src: ['.tmp/public/**/*', 'views/**/*']
+      src: [
+        '.tmp/public/**/*'
+        'views/**/*'
+      ]
     options:
       proxy: "localhost:1337"
 

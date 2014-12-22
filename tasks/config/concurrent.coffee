@@ -50,7 +50,7 @@ module.exports = (grunt) ->
       tasks: [
         "shell:mongodb"
         "nodemon:sails"
-        "browserSync:bsFiles"
+        "browserSync"
       ]
       options: opts
 
