@@ -1,5 +1,5 @@
 #===============================================================================
-# grunt-contrib-shell
+# grunt-concurrent
 #
 # Runs grunt tasks concurrently, speeding up build times.
 #===============================================================================
@@ -18,6 +18,7 @@ module.exports = (grunt) ->
         "watch:sprites"
         "watch:bower"
         "compass:watch"
+        # "watch:css" TODO uncomment for greater browser support whilst developing
       ]
       options: opts
 

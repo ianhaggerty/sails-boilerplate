@@ -1,12 +1,13 @@
 #===============================================================================
 # prod.coffee
 #
-# Registers a 'watch-all' task, which compiles and watches for file changes, as
-# well as a 'boot-dev' task, which launches mongodb, sails and a browser-sync
-# proxy.
+# Production oriented generic tasks.
 #===============================================================================
 
 module.exports = (grunt) ->
+  
+  ### buildProd ###
+  
   grunt.registerTask "buildProd", [
     "compileAssets"
     "htmlmin:svgIcons"
@@ -22,4 +23,6 @@ module.exports = (grunt) ->
     "clean:prod"
   ]
 
-  grunt.registerTask "prod", [] # make sails happy
+  
+  # This is here since sails calls it by default
+  grunt.registerTask "prod", []

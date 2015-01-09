@@ -1,13 +1,28 @@
-//-=============================================================================
+//------------------------------------------------------------------------------
 //- Jade Mixins
-//-=============================================================================
+//-
+//- By default, these are included from the 'layout.jade' so they can be accessed
+//- from any template extending that layout.
+//------------------------------------------------------------------------------
+
+
+//- This mixin is used to convinently pull in an svg-icon generated with
+//- grunt-svgstore, found under `assets/images/icons`.
 
 mixin icon-svg(name, height, width)
   svg(height=height width=width class="icon-svg icon-svg__#{name}")
     use(xlink:href="#icon-svg__#{name}")
 
+
+//- This mixin is used to convinently pull in a font-icon generated with
+//- grunt-webfont, found under `assets/images/icons`.
+
 mixin icon-font(name)
   i(class="icon-font icon-font__#{name}")
+
+
+//- This mixin is used to convinently pull in a sprite compiled with compass.
+//- These are found under `assets/image/sprite`.
 
 mixin sprite(name)
   i(class="sprite sprite__#{name}")

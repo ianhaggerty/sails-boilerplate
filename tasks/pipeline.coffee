@@ -1,7 +1,24 @@
+#===============================================================================
+# pipeline.coffee
+# 
+# This is where the order of javascript, css and client side templates are
+# configured.
+#===============================================================================
+
+
+## CSS files
+# relative to `.tmp/public/styles`
+# file extension `.css`
+
 cssFilesToInject = [
   "icons"
 	"**/*"
 ]
+
+
+## JS Files
+# relative to `assets/js`
+# file extension `.js`
 
 jsFilesToInject = [
 	"dependencies/dist/sails.io"
@@ -27,9 +44,20 @@ jsFilesToInject = [
 	"**/*"
 ]
 
+
+## Template (javascript) files
+# These javascript files are intended to populate the global `JST` object.
+# relative to `views/`
+# file extension `.jade`
+
 templateFilesToInject = [
   '**/_*'
 ]
+
+
+## Javascript test files
+# relative to `assets/tests`
+# file extension `.js`
 
 jsTestFilesToInject = [
 	"jasmine/jasmine"
@@ -40,9 +68,20 @@ jsTestFilesToInject = [
 	"**/*"
 ]
 
+
+## CSS Test styles
+# relative to `assets/tests`
+# file extension `.js`
+
 cssTestStylesToInject = [
 	"jasmine/**/*"
 ]
+
+
+
+
+
+### Module Exports ###
 
 module.exports.cssFilesToInject = cssFilesToInject.map (path) ->
   ".tmp/public/styles/" + path + '.css'

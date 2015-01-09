@@ -17,7 +17,7 @@ module.exports = (grunt) ->
     # Assets to watch:
       files: [
         "assets/**/*"
-        "tasks/pipeline.js" # injector needs to re-run
+        "tasks/pipeline.coffee" # injector needs to re-run
         "!assets/images/icons/**/*" # handled by webfont
         "!assets/images/sprites/**/*" # handled by compass
         "!assets/**/*.scss" # handled by compass
@@ -58,6 +58,15 @@ module.exports = (grunt) ->
 
       tasks: [
         "bower:dev"
+      ]
+
+    css:
+      files: [
+        '.tmp/public/styles/**/*.css'
+      ]
+
+      tasks: [
+        "postcss"
       ]
 
   grunt.loadNpmTasks "grunt-contrib-watch"

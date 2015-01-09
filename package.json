@@ -22,6 +22,7 @@
   },
   "author": "Oscar Haggerty",
   "dependencies": {
+    "autoprefixer-core": "^4.0.2",
     "bcrypt": "^0.8.0",
     "bluebird": "^2.3.11",
     "coffee-script": "^1.8.0",
@@ -42,6 +43,7 @@
     "grunt-contrib-uglify": "^0.4.0",
     "grunt-contrib-watch": "^0.5.3",
     "grunt-nodemon": "^0.3.0",
+    "grunt-postcss": "^0.2.0",
     "grunt-sails-linker": "^0.9.5",
     "grunt-shell-spawn": "^0.3.0",
     "grunt-svgstore": "^0.4.1",
