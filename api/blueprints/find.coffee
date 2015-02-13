@@ -1,4 +1,5 @@
 actionUtil = require './helpers/actionUtil'
+_ = require 'lodash'
 
 module.exports = (req, res) ->
 

@@ -24,7 +24,7 @@ jsFilesToInject = [
 	"dependencies/dist/sails.io"
 
 	"dependencies/dist/jquery"
-	"dependencies/dist/lodash.compat"
+	"dependencies/lodash"
   "dependencies/json2"
   "dependencies/jade"
 
